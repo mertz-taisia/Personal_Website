@@ -9,12 +9,22 @@ import emailIcon from '../images/email_icon.png';
 import githubIcon from '../images/github_icon.png';
 import linkedinIcon from '../images/linkedin_icon.png';
 import resumeIcon from '../images/resume_icon.jpg';
+import resume from '../Taisia Mertz Resume.pdf';
 
 
 import cuaIcon from '../images/cua_icon.png';
 import ecoFarmsIcon from '../images/eco_farms_icon.jpg';
 import uscMakersJobIcon from '../images/usc_makers_job_icon.png';
 import bahIcon from '../images/bah_icon.png';
+
+
+const email = 'tmertz@usc.edu';
+
+const handleEmailClick = () => {
+  const mailtoLink = `mailto:${email}?`;
+  window.location.href = mailtoLink;
+};
+
 
 class MainPage extends React.Component {
 
@@ -49,6 +59,20 @@ class MainPage extends React.Component {
       
   handleSelection = (section) => {
     this.setState({ portfolioSelected: section });
+  };
+  
+
+  handleDownloadClick = () => {
+    // Open the PDF in a new tab
+    window.open(resume, '_blank', 'noopener,noreferrer');
+
+    // Create an anchor element to trigger the download
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'Taisia Mertz Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   render() {
@@ -136,8 +160,10 @@ class MainPage extends React.Component {
                             </div>
                             <p></p>
                             <div className="careerList">
-                                <button className="contactMeButton">CONTACT ME</button>
-                                <button className="downloadCvButton">DOWNLOAD CV</button>
+                                <button className="contactMeButton" onClick={handleEmailClick}>CONTACT ME</button>
+                                <button className="downloadCvButton" onClick={this.handleDownloadClick}>
+                                DOWNLOAD CV
+                                </button>
                             </div>
                         </div>
                         <img className='techBackground' src={techBackground} alt="Tech Background" />
@@ -162,26 +188,32 @@ class MainPage extends React.Component {
                             positive impact. I am committed to utilizing my skills and knowledge to develop innovative 
                             solutions that address these challenges head-on.</p>
                             <div className="contactOptions">
-                                <button className="emailButton">
+                                <button className="emailButton" onClick={handleEmailClick}>
                                     <div className="iconWrapper">
                                         <img className='emailIcon' src={emailIcon} alt="emailIcon" />
                                     </div>
                                 </button>
-                                <button className="githubButton">  
-                                    <div className="iconWrapper">
-                                        <img className='githubIcon' src={githubIcon} alt="githubIcon" />
-                                    </div>
-                                </button>
-                                <button className="linkedinButton">
-                                    <div className="iconWrapper">
-                                        <img className='linkedinIcon' src={linkedinIcon} alt="linkedinIcon" />
-                                    </div>
-                                </button>
-                                <button className="resumeButton">
-                                    <div className="iconWrapper">
-                                        <img className='resumeIcon' src={resumeIcon} alt="resumeIcon" />
-                                    </div>
-                                </button>
+                                <a href='https://github.com/mertz-taisia' target="_blank" rel="noreferrer noopener">
+                                    <button className="githubButton">  
+                                        <div className="iconWrapper">
+                                            <img className='githubIcon' src={githubIcon} alt="githubIcon" />
+                                        </div>
+                                    </button>
+                                </a>
+                                <a href='https://www.linkedin.com/in/taisia-mertz-6a3782224/' target="_blank" rel="noreferrer noopener">
+                                    <button className="linkedinButton">
+                                        <div className="iconWrapper">
+                                            <img className='linkedinIcon' src={linkedinIcon} alt="linkedinIcon" />
+                                        </div>
+                                    </button>
+                                </a>
+                                <a href={resume} target="_blank" rel="noreferrer noopener">
+                                    <button className="resumeButton">
+                                        <div className="iconWrapper">
+                                            <img className='resumeIcon' src={resumeIcon} alt="resumeIcon" />                     
+                                        </div>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -278,27 +310,28 @@ class MainPage extends React.Component {
                 <section ref={this.contactRef} id="contactSec" className="contactSec">
                     <label className='conectWithMeLabel'>CONNECT WITH ME</label>
                     <div className='contactContent'>
-                        <div className='linkedinBox'>
+                        <a href='https://www.linkedin.com/in/taisia-mertz-6a3782224/' target="_blank" rel="noreferrer noopener" className='linkedinBox'>
                             <img src={linkedinIcon} className='linkedinIconContact'></img>
                             <div className='linkedinInfo'>
                                 <label className='linkedinLabel'>LINKEDIN</label>
                                 <label className='linkedinTag'>@taisia-mertz</label>
                             </div>
-                        </div>
-                        <div className='emailBox'>
+                        </a>
+                        <div className='emailBox'  onClick={handleEmailClick}>
                             <img src={emailIcon} className='emailIconContact'></img>
                             <div className='emailInfo'>
                                 <label className='emailLabel'>EMAIL</label>
                                 <label className='emailTag'>tmertz@usc.edu</label>
                             </div>
                         </div>
-                        <div className='githubBox'>
-                            <img src={githubIcon} className='githubIconContact'></img>
+                        <a href='https://github.com/mertz-taisia' target="_blank" rel="noreferrer noopener" className='githubBox'>
+                            <img src={githubIcon} className='githubIconContact' alt='GitHub Icon'></img>
                             <div className='githubInfo'>
                                 <label className='githubLabel'>GITHUB</label>
                                 <label className='githubTag'>@mertz-taisia</label>
                             </div>
-                        </div>
+                        </a>
+
                     </div>
                 </section>
             </main>
