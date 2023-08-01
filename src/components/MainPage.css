@@ -1,0 +1,648 @@
+body {
+    background: rgb(0, 6, 57);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+}
+
+.gap {
+    height: 10vh;
+}
+
+.mainPageHeader {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 6, 57, 0.85);
+  }
+  
+
+.mainLabel {
+    margin-left: 2vw;
+    color: rgb(185, 187, 216);
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 0.155em; 
+}
+
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 2vw;
+  }
+  
+.navList li {
+    display: inline;
+    margin-right: 1vw;
+    font-size: 0.85em;
+    color: white;
+}
+
+.mainPageInner {
+    padding: 0 5vw; 
+}
+
+.homeSec {
+    /* background: red; */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative; 
+}
+
+.introContent, .techBackground, .headshot {
+    position: absolute;
+}
+
+.introContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10vh 10vw;
+    left: 0;
+    z-index: 2; 
+}
+
+.techBackground {
+    position: absolute;
+    width: 65vw; 
+    height: 45vw; 
+    right: 0;
+    top: 10vh;
+    z-index: 1;   
+    opacity: 0.5;
+}
+
+.headshot {
+    position: absolute;
+    height: 60vh; 
+    right: 23vw;
+    top: 20vh;
+    z-index: 3; 
+}
+
+
+.intro {
+    color: rgb(170, 179, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.name {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.careerList {
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.contactMeButton{
+    width: 13vw;
+    height: 3vw;
+    border-radius: 35px;
+    background: rgb(170, 179, 255);
+    color: rgb(0, 6, 57);
+    font-weight: bold;
+    border: transparent;
+    margin-right: 1vw;
+    font-size: 1.25em;
+}
+
+.downloadCvButton{
+    width: 13vw;
+    height: 3vw;
+    border-radius: 35px;
+    background: rgb(0, 6, 57);
+    color: rgb(170, 179, 255);
+    border: 2px solid rgb(170, 179, 255);
+    font-size: 1.25em;
+}
+
+.aboutSec{
+    position: relative;
+    background: rgb(0, 3, 30);
+    border: 0.5px solid rgb(111, 125, 255);
+    height: 52vh;
+    z-index: 8; 
+    filter: drop-shadow(10px 10px 100px rgba(170, 178, 255, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutSecInner {
+    width: 90%;
+    height: 80%;
+    /* background: red; */
+}
+
+.aboutMeTitle {
+    color: aliceblue;
+    font-size: 1.85em;
+    letter-spacing: 1vw;
+    font-weight: lighter;
+}
+
+.aboutMeInfo {
+    color: rgb(185, 187, 216);
+    color: white;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.aboutMeContent {
+    color: rgb(185, 187, 216);
+    font-weight: lighter;
+    font-size: 0.92em;
+    line-height: 2;
+}
+
+
+.emailButton {
+    background: rgb(185, 187, 216);
+    border-radius: 35px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 2.75vw;
+    height: 2.75vw;
+    border: transparent;
+    overflow: hidden; 
+    padding: 0;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.emailIcon {
+    width: 93%;
+    height: 93%; 
+    object-fit: cover; 
+    padding: 0;
+    margin: 0;
+}
+
+.githubButton {
+    background: rgb(185, 187, 216);
+    border-radius: 35px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 2.75vw;
+    height: 2.75vw;
+    border: transparent;
+    overflow: hidden; 
+    padding: 0;
+}
+
+.githubIcon {
+    width: 92%;
+    height: 90%; 
+    object-fit: cover; 
+    padding: 0;
+    margin: 0;
+}
+
+.linkedinButton {
+    background: rgb(185, 187, 216);
+    border-radius: 35px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 2.75vw;
+    height: 2.75vw;
+    border: transparent;
+    overflow: hidden; 
+    padding: 0;
+}
+
+.linkedinIcon {
+    width: 93%;
+    height: 93%; 
+    object-fit: cover; 
+    padding: 0;
+    margin: 0;
+}
+
+.resumeButton {
+    background: rgb(185, 187, 216);
+    border-radius: 35px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 2.75vw;
+    height: 2.75vw;
+    border: transparent;
+    overflow: hidden; 
+    padding: 0;
+}
+
+.resumeIcon {
+    width: 93%;
+    height: 93%; 
+    object-fit: cover; 
+    padding: 0;
+    margin: 0;
+}
+
+.experienceSec {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experienceSec {
+    position: relative;
+}
+  
+.workExperienceContainer {
+    position: relative;
+}
+  
+.timeline {
+    position: absolute;
+    width: 100%;
+    height: 0.5vh;
+    background-color: white; 
+    bottom: 30%; 
+    left: 0;
+}
+
+
+.workExperienceLabel {
+    color: white;
+    font-size: 1.95em;
+    letter-spacing: 1.35vw;
+    font-weight: lighter;
+}
+
+.workExperienceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+}
+
+.job {
+    flex: 1;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 6, 57);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.jobContainerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobIcon {
+    width: 9vw;
+    border-radius: 10px;
+}
+
+.jobDate {
+    font-size: 1.75em;
+    color: aliceblue;
+    margin-top: 3vh;
+    letter-spacing: 0.2vw;
+}
+
+.jobLabel {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: aliceblue;
+    margin-top: 1vh;
+}
+
+.roleDescription {
+    font-size: 0.85em;
+    font-weight: lighter;
+    color: rgb(185, 187, 216);
+}
+
+.porfolioSec {
+    height: 50vh;
+}
+
+.porfolioSelection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.selectedOutput {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+}
+
+.center {
+    flex: 5;
+}
+
+.right {
+    flex: 1;
+}
+
+.returnToPortfolio {
+    margin-top: 17vh;
+    color: white;
+    margin-left: 3vw;
+    font-size: 1.5em;
+    transform: scaleX(3);
+    font-weight: lighter;
+}
+
+.selectionLabel {
+    margin-top: 14vh;
+    color: white;
+    font-size: 1.95em;
+    letter-spacing: 1.35vw;
+    font-weight: lighter;
+}
+
+.softwareDeveloperContainer, .engineerContainer, .artistContainer {
+    flex: 1;
+    height: 100%;
+    background: red;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    background: rgb(0, 6, 57);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .selected {
+    flex: 1;
+    height: 100%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    background: rgb(0, 3, 30);
+    border: 1px solid rgba(170, 179, 255 , 0.6);
+    filter: drop-shadow(5px 5px 10px rgba(170, 178, 255, 0.2));
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.selectedSec {
+    /* background: yellow; */
+    height: 100vh;
+}
+
+.softwareDeveloperContainerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    height: auto;
+}
+
+.softwareDeveloperLabel {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.25vw;
+}
+
+.softwareDeveloperDescription {
+    color: white;
+    line-height: 3;
+}
+
+.softwareDeveloperLearnMore {
+    color: #AAB2FF;
+}
+
+.engineerContainerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    height: auto;
+}
+
+.engineerLabel {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.25vw;
+}
+
+.engineerDescription {
+    color: white;
+    line-height: 3;
+}
+
+.engineerLearnMore {
+    color: #AAB2FF;
+}
+
+.artistContainerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    height: auto;
+}
+
+.artistLabel {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.25vw;
+}
+
+.artistDescription {
+    color: white;
+    line-height: 3;
+}
+
+.artistLearnMore {
+    color: #AAB2FF;
+}
+
+.contactSec{
+    height: 22vh;
+    background: #00031E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.conectWithMeLabel {
+    color: white;
+    font-size: 1.35em;
+    letter-spacing: 0.35vw;
+    font-weight: lighter;
+    margin-bottom: 0.5vh;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+.linkedinBox {
+    flex: 1;
+    margin-left: 7vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #000638;
+    border: 1px solid rgba(145, 149, 172, 0.5);
+    height: 80%;
+}
+
+.emailBox {
+    flex: 1;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #000638;
+    border: 1px solid rgba(145, 149, 172, 0.5);
+    height: 80%;
+}
+
+.githubBox {
+    flex: 1;
+    margin-right: 7vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #000638;
+    border: 1px solid rgba(145, 149, 172, 0.5);
+    height: 80%;
+}
+
+.linkedinIconContact {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
+}
+
+.linkedinInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.linkedinLabel {
+    color: rgb(185, 187, 216);
+    font-size: 0.9em;
+    letter-spacing: 0.15em; 
+}
+
+.linkedinTag {
+    color: rgb(145, 149, 172);
+    font-size: 0.7em;
+}
+
+.emailIconContact {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
+}
+
+.emailInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.emailLabel {
+    color: rgb(185, 187, 216);
+    font-size: 0.9em;
+    letter-spacing: 0.15em; 
+}
+
+.emailTag {
+    color: rgb(145, 149, 172);
+    font-size: 0.7em;
+}
+
+.githubIconContact {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
+}
+
+
+.githubInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.githubLabel {
+    color: rgb(185, 187, 216);
+    font-size: 0.9em;
+    letter-spacing: 0.15em; 
+}
+
+.githubTag {
+    color: rgb(145, 149, 172);
+    font-size: 0.7em;
+}
+
+
+.githubInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
