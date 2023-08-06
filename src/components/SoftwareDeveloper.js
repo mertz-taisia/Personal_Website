@@ -19,9 +19,9 @@ function SoftwareDeveloper() {
         </div>
       </div>
 
-      <div className='hyteresisCalculatorSelection'>
+      <div className='hysteresisCalculatorSelection'>
         <div className='selectionInner'>
-          <img className='hyteresisCalculatorIcon' src={hysteresisCalculatorIcon}></img>
+          <img className='hysteresisCalculatorIcon' src={hysteresisCalculatorIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>Hyteresis Calculator</label>
             <p className='selectionDecriptionContainer'>Open source commision work written for the NICHD/DIR Section on Molecular Transport that performs the mathematical analysis of hysteresis behavior detected in voltage gating of large beta-barrel transmembrane ion channels</p>
@@ -29,9 +29,9 @@ function SoftwareDeveloper() {
         </div>      
       </div>
 
-      <div className='placeholderSelection'>
+      <div className='personalWebsiteSelection'>
         <div className='selectionInner'>
-          <img className='hyteresisCalculatorIcon' src={personalWebsiteIcon}></img>
+          <img className='personalWebsiteIcon' src={personalWebsiteIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>Personal Website</label>
             <p className='selectionDecriptionContainer'>Personal Website developed using ReactJS. It serves as a platform to showcase my various original design concepts and acts as a creative representation of my CV, allowing you to explore and learn more about my professional experience.</p>

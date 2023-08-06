@@ -1,5 +1,7 @@
 .artistOuput {
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +24,11 @@
     justify-content: center;
 }
 
+.paintingSelection:hover {
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.4); 
+}
+
+
 .sculpturesSelection {
     margin-top: 2vh;
     width: 95%;
@@ -34,6 +41,10 @@
     justify-content: center;
 }
 
+.sculpturesSelection:hover {
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.4); 
+}
+
 .mixedMediaSelection {
     margin-top: 2vh;
     width: 95%;
@@ -44,10 +55,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.mixedMediaSelection:hover {
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.4); 
 }
 
 .selectionInner {
-    width: 98%;
+    width: 95%;
     height: 90%;
     display: flex;
     align-items: center;

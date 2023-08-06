@@ -29,7 +29,7 @@ html {
 
 .mainLabel {
     margin-left: 2vw;
-    color: rgb(185, 187, 216);
+    color: rgb(170, 179, 255);
     font-weight: bold;
     font-size: 0.9em;
     letter-spacing: 0.155em; 
@@ -45,6 +45,11 @@ html {
     align-items: center;
     justify-content: right;
     margin-right: 2vw;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
   }
   
 .navList li {
@@ -52,6 +57,7 @@ html {
     margin-right: 1vw;
     font-size: 0.85em;
     color: white;
+    cursor: pointer;
 }
 
 .mainPageInner {
@@ -59,7 +65,6 @@ html {
 }
 
 .homeSec {
-    /* background: red; */
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -117,9 +122,11 @@ html {
     color: white;
     font-weight: bold;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
 }
 
-.contactMeButton{
+.contactMeButton {
     width: 13vw;
     height: 3vw;
     border-radius: 35px;
@@ -129,24 +136,159 @@ html {
     border: transparent;
     margin-right: 1vw;
     font-size: 1.25em;
+    cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
-.downloadCvButton{
-    width: 13vw;
+.contactMeButton:hover {
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.4); 
+    background: rgb(224, 227, 255);
+}
+
+
+.contactMeButton {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
     height: 3vw;
-    border-radius: 35px;
-    background: rgb(0, 6, 57);
-    color: rgb(170, 179, 255);
-    border: 2px solid rgb(170, 179, 255);
-    font-size: 1.25em;
+    padding: 1.3em 3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(149, 158, 255);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 5px 5px rgba(255, 226, 226, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.downloadCvButtonHref {
-    text-decoration: none; 
-    color: rgb(170, 179, 255);
+ .contactMeButton:hover .downloadIcon {
+    display: inline;
+ }
+  
+.contactMeButton:hover { 
+    background-color: rgb(170, 173, 255);
+    box-shadow: 0px 5px 20px rgba(195, 196, 255, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+  
+.contactMeButton:active {
+    transform: translateY(-1px);
 }
 
-.aboutSec{
+
+.downloadCvButtonLabel {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.downloadCvButton {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 15vw;
+    height: 3vw;
+    padding: 1.3em 3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(0, 6, 57);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 5px 5px rgba(255, 226, 226, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .downloadCvButton:hover .downloadIcon {
+    display: inline;
+  }
+
+.downloadIcon {
+    height: 1.2em;
+    width: 1.2em;
+    display: none;
+}
+
+.downloadIcon.hidden {
+    display: none;
+}
+
+.downloadCvButton.clicked {
+    background-color: rgb(0, 6, 57);
+}
+
+.svg {
+    height: 100%;
+    width: 100%;
+}
+  
+.downloadCvButton:hover { 
+    background-color: rgb(0, 6, 57);
+    box-shadow: 0px 5px 20px rgba(195, 196, 255, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+  
+.downloadCvButton:active {
+    transform: translateY(-1px);
+}
+  
+.downloadCvButton:hover .downloadIcon,
+.downloadCvButton.clicked .downloadIcon {
+  display: inline;
+}
+
+.downloadIcon {
+  height: 1.2em;
+  width: 1.2em;
+  display: none;
+}
+
+.downloadCvButtonLabel {
+    flex-grow: 1;
+    text-align: center;
+}
+  
+.downloadIcon {
+    flex-grow: 0; 
+}
+  
+.downloadCvButton.clicked .downloadCvButtonLabel,
+.downloadCvButton:hover .downloadCvButtonLabel {
+    text-align: left; 
+}
+  
+
+
+.textContainer {
+    flex-grow: 1;
+}
+  
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.aboutSec {
     position: relative;
     background: rgb(0, 3, 30);
     border: 0.5px solid rgb(111, 125, 255);
@@ -161,7 +303,6 @@ html {
 .aboutSecInner {
     width: 90%;
     height: 80%;
-    /* background: red; */
 }
 
 .aboutMeTitle {
@@ -185,94 +326,261 @@ html {
     line-height: 2;
 }
 
-
-.emailButton {
-    background: rgb(185, 187, 216);
-    border-radius: 35px;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    width: 2.75vw;
-    height: 2.75vw;
-    border: transparent;
-    overflow: hidden; 
-    padding: 0;
-}
-
-.iconWrapper {
+.contactOptions {
     display: flex;
     justify-content: center;
+}
+
+.linkedInContactButton {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #2867B2;
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.emailIcon {
-    width: 93%;
-    height: 93%; 
-    object-fit: cover; 
-    padding: 0;
-    margin: 0;
-}
-
-.githubButton {
-    background: rgb(185, 187, 216);
-    border-radius: 35px;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    border: 2px solid #bbecff; 
     margin-left: 1vw;
     margin-right: 1vw;
-    width: 2.75vw;
-    height: 2.75vw;
-    border: transparent;
-    overflow: hidden; 
-    padding: 0;
+}
+  
+.logoIcon {
+    fill: white;
+}
+  
+.linkedInContactLabel {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #2867B2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+  
+.linkedInContactLabel::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #2867B2;
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    bottom: -20%;
+    transition-duration: .3s;
+}
+  
+.linkedInContactButton:hover .linkedInContactLabel {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+}
+  
+.linkedInContactButton:hover {
+    background-position: right;
+    transition-duration: .5s;
 }
 
-.githubIcon {
-    width: 92%;
-    height: 90%; 
-    object-fit: cover; 
-    padding: 0;
-    margin: 0;
-}
 
-.linkedinButton {
-    background: rgb(185, 187, 216);
-    border-radius: 35px;
+.githubContactButton {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #181717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    border: 2px solid rgb(193, 193, 193);  
     margin-left: 1vw;
     margin-right: 1vw;
-    width: 2.75vw;
-    height: 2.75vw;
-    border: transparent;
-    overflow: hidden; 
-    padding: 0;
+}
+  
+.logoIcon {
+    fill: white;
+}
+  
+.githubContactLabel {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #181717;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+  
+.githubContactLabel::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #181717;
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    bottom: -20%;
+    transition-duration: .3s;
+}
+  
+.githubContactButton:hover .githubContactLabel {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+}
+  
+.githubContactButton:hover {
+    background-position: right;
+    transition-duration: .5s;
 }
 
-.linkedinIcon {
-    width: 93%;
-    height: 93%; 
-    object-fit: cover; 
-    padding: 0;
-    margin: 0;
-}
 
-.resumeButton {
-    background: rgb(185, 187, 216);
-    border-radius: 35px;
+.emailContactButton {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #D44638;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    border: 2px solid #ffbbbb;
     margin-left: 1vw;
     margin-right: 1vw;
-    width: 2.75vw;
-    height: 2.75vw;
-    border: transparent;
-    overflow: hidden; 
-    padding: 0;
+}
+  
+.logoIcon {
+    fill: white;
+}
+  
+.emailContactLabel {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #D44638;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+  
+.emailContactLabel::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #D44638;
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    bottom: -20%;
+    transition-duration: .3s;
+}
+  
+.emailContactButton:hover .emailContactLabel {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+}
+  
+.emailContactButton:hover {
+    background-position: right;
+    transition-duration: .5s;
 }
 
-.resumeIcon {
-    width: 93%;
-    height: 93%; 
-    object-fit: cover; 
-    padding: 0;
-    margin: 0;
+
+.resumeContactButton {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #181717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    border: 2px solid #c8c8c8; 
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
+  
+.logoIcon {
+    fill: white;
+}
+  
+.resumeContactLabel {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #181717;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+  
+.resumeContactLabel::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #181717;
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    bottom: -20%;
+    transition-duration: .3s;
+}
+  
+.resumeContactButton:hover .resumeContactLabel {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+}
+  
+.resumeContactButton:hover {
+    background-position: right;
+    transition-duration: .5s;
+}
+
 
 .experienceSec {
     height: 80vh;
@@ -327,6 +635,12 @@ html {
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.job:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); 
 }
 
 .jobContainerInner {
@@ -376,22 +690,20 @@ html {
 .selectedOutput {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-.left {
-    flex: 1;
-}
-
-.center {
-    flex: 5;
-}
-
-.right {
-    flex: 1;
-}
+.left, .right {
+    width: 10%;
+ }
+ 
+ .center {
+    width: 70%;
+ }
+ 
 
 .returnToPortfolio {
-    margin-top: 17vh;
+    margin-top: 15vh;
     color: white;
     margin-left: 3vw;
     font-size: 1.5em;
@@ -410,7 +722,7 @@ html {
 .softwareDeveloperContainer, .engineerContainer, .artistContainer {
     flex: 1;
     height: 100%;
-    background: red;
+    /* background: red; */
     margin-right: 2vw;
     margin-left: 2vw;
     background: rgb(0, 6, 57);
@@ -420,9 +732,14 @@ html {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-  }
+    transition: filter 0.3s ease;
+}
+
+.softwareDeveloperContainer:hover, .engineerContainer:hover, .artistContainer:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); 
+}
   
-  .selected {
+.selected {
     flex: 1;
     height: 100%;
     margin-right: 2vw;
@@ -438,7 +755,6 @@ html {
 }
 
 .selectedSec {
-    /* background: yellow; */
     height: 100vh;
 }
 
@@ -573,6 +889,66 @@ html {
     border: 1px solid rgba(145, 149, 172, 0.5);
     height: 80%;
 }
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    /* border: none; */
+    border-radius: 50%;
+    background-color: #00acee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    border: 2px solid #bbecff;
+  }
+  
+  .logoIcon {
+    fill: white;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background-color: #00acee;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #00acee;
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    bottom: -20%;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: .5s;
+  }
 
 .linkedinIconContact {
     width: 7vh;
