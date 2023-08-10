@@ -22,6 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .paintingSelection:hover {
@@ -39,6 +40,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .sculpturesSelection:hover {
@@ -56,6 +58,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 3vh;
+    cursor: pointer;
 }
 
 .mixedMediaSelection:hover {
@@ -67,10 +70,12 @@
     height: 90%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .projectInfoContainer {
     text-align: left;
+    cursor: pointer;
 }
 
 .paintingIcon {
@@ -78,6 +83,7 @@
     height: 13vh;
     margin-left: 1vw;
     margin-right: 3vw;
+    cursor: pointer;
 }
 
 .sculpturesIcon {
@@ -85,6 +91,7 @@
     height: 13vh;
     margin-left: 1vw;
     margin-right: 3vw;
+    cursor: pointer;
 }
 
 .mixedMediaIcon {
@@ -92,14 +99,18 @@
     height: 13vh;
     margin-left: 1vw;
     margin-right: 3vw;
+    cursor: pointer;
 }
 
 .selectionTitleContainer {
     color: white;
     letter-spacing: 0.25vw;
+    font-size: calc(3.2px + 0.75vw);
+    cursor: pointer;
 }
 
 .selectionDecriptionContainer {
     color: rgb(185, 187, 216);
-    font-size: 0.9em;
+    font-size: calc(3px + 0.75vw);
+    cursor: pointer;
 }
