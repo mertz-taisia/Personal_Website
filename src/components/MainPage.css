@@ -65,14 +65,15 @@ html {
 }
 
 .homeSec {
-    height: calc(150px + 30vw);
+    height: 40vw;
+    min-height: 265px;
     display: flex;
     justify-content: center;
     align-items: center;    
     position: relative; 
 }
 
-.introContent, .techBackground, .headshot {
+.introContent {
     position: absolute;
 }
 
@@ -82,31 +83,11 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10vh 10vw;
+    padding: 10vw 10vw;
     left: 0;
-    z-index: 2; 
+    z-index: 2;
 }
 
-.techBackground {
-    position: absolute;
-    width: 65vw; 
-    /* height: 45vw;  */
-    right: 0;
-    /* right: 23vw; */
-    /* bottom: -25vh; */
-    z-index: 1;   
-    opacity: 0.5;
-}
-
-.headshot {
-    position: absolute;
-    /* height: 60vh;  */
-    width: 20vw;
-    /* min-width: 200px; */
-    right: 23vw;
-    /* bottom: 0; */
-    z-index: 3; 
-}
 
 .background {
     position: absolute;
@@ -291,21 +272,18 @@ html {
     position: relative;
     background: rgb(0, 3, 30);
     border: 0.5px solid rgb(111, 125, 255);
-    height: calc(150px + 15vw);
-    min-height: 100px;
+    height: calc(200px + 10vw);
+    min-height: 250px;
     z-index: 8; 
     filter: drop-shadow(10px 10px 100px rgba(170, 178, 255, 0.2));
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .aboutSecInner {
     max-width: 90%;
-    height: 55%;
-    margin-bottom: 3vh;
+    height: 85%;
 }
 
 
@@ -334,9 +312,25 @@ html {
     justify-content: center;
 }
 
+.iconSize {
+    width: 1.5vw;
+    height: 1.75vw;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+.iconSizeGithub {
+    width: 2vw;
+    height: 2vw;
+    min-width: 20px;
+    min-height: 20px;
+}
+
 .linkedInContactButton {
-    width: 45px;
-    height: 45px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background-color: #2867B2;
     display: flex;
@@ -398,8 +392,10 @@ html {
 
 
 .githubContactButton {
-    width: 45px;
-    height: 45px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background-color: #181717;
     display: flex;
@@ -461,8 +457,10 @@ html {
 
 
 .emailContactButton {
-    width: 45px;
-    height: 45px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background-color: #D44638;
     display: flex;
@@ -523,8 +521,10 @@ html {
 
 
 .resumeContactButton {
-    width: 45px;
-    height: 45px;
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     background-color: #181717;
     display: flex;
