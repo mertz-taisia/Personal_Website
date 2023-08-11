@@ -171,11 +171,20 @@ class MainPage extends React.Component {
                             <label className="intro">Hello, I'm...</label>
                             <label className="name">TAISIA MERTZ</label>
                             <div className="careerList">
-                                <a onClick={() => this.scrollTo(this.porfolioRef)}>Software Developer</a>
+                                <a onClick={() => {
+                                    this.handleSelection('softwareDeveloper');
+                                    this.scrollTo(this.selectedRef);
+                                  }}>Software Developer</a>
                                 /
-                                <a onClick={() => this.scrollTo(this.porfolioRef)}>Engineer</a>
+                                <a onClick={() => {
+                                    this.handleSelection('engineer');
+                                    this.scrollTo(this.selectedRef);
+                                  }}>Engineer</a>
                                 /
-                                <a onClick={() => this.scrollTo(this.porfolioRef)}>Artist</a>
+                                <a onClick={() => {
+                                    this.handleSelection('artist');
+                                    this.scrollTo(this.selectedRef);
+                                  }}>Artist</a>
                             </div>
                             <p></p>
                             <div className="careerList">
