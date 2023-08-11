@@ -13,9 +13,10 @@
 }
 
 .budgetTrackerSelection {
-    margin-top: 5vh;
+    margin-top: 1vw;
+    /* margin-top: calc(0px + 1vw); */
     width: 95%;
-    height: 20vh;
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -30,9 +31,10 @@
 }
 
 .hysteresisCalculatorSelection {
-    margin-top: 2vh;
+    margin-top: 1vw;
     width: 95%;
-    height: 20vh;
+    /* height: 20vh; */
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -48,9 +50,10 @@
 
 
 .personalWebsiteSelection {
-    margin-top: 2vh;
+    margin-top: 1vw;
     width: 95%;
-    height: 20vh;
+    /* height: 20vh; */
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -78,24 +81,21 @@
 }
 
 .budgetTrackerIcon {
-    width: 13vh;
-    height: 13vh;
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;
 }
 
 .hysteresisCalculatorIcon {
-    width: 13vh;
-    height: 13vh;
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;
 }
 
 .personalWebsiteIcon {
-    width: 13vh;
-    height: 13vh;
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;

@@ -13,9 +13,9 @@
 }
 
 .paintingSelection {
-    margin-top: 5vh;
+    margin-top: 1vw;
     width: 95%;
-    height: 20vh;
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -31,9 +31,9 @@
 
 
 .sculpturesSelection {
-    margin-top: 2vh;
+    margin-top: 1vw;
     width: 95%;
-    height: 20vh;
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -48,9 +48,9 @@
 }
 
 .mixedMediaSelection {
-    margin-top: 2vh;
+    margin-top: 1vw;
     width: 95%;
-    height: 20vh;
+    height: calc(4px + 10vw);
     background: rgb(0, 6, 57);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -79,24 +79,27 @@
 }
 
 .paintingIcon {
-    width: 13vh;
-    height: 13vh;
+    /* width: 13vh;
+    height: 13vh; */
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;
 }
 
 .sculpturesIcon {
-    width: 13vh;
-    height: 13vh;
+    /* width: 13vh;
+    height: 13vh; */
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;
 }
 
 .mixedMediaIcon {
-    width: 13vh;
-    height: 13vh;
+    /* width: 13vh;
+    height: 13vh; */
+    width: calc(7px + 6vw);
     margin-left: 1vw;
     margin-right: 3vw;
     cursor: pointer;

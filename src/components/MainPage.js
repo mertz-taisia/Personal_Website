@@ -51,7 +51,7 @@ class MainPage extends React.Component {
             let headerHeight = 72; 
     
             if (section === this.selectedRef) {
-                headerHeight = 0;
+                headerHeight = 100;
             } 
             else if (section === this.aboutMeRef) {
                 headerHeight = 200;
@@ -115,7 +115,7 @@ class MainPage extends React.Component {
         </div>);
     } 
     else if (portfolioSelected === 'engineer') {
-        selectedComponent = (<div className='output'>
+        selectedComponent = (<div className='selectedComponentOutput'>
         <div className='selectedOutput'>
             <div className='left'></div>
             <div className='center'>
@@ -129,7 +129,7 @@ class MainPage extends React.Component {
         </div>);
     } 
     else if (portfolioSelected === 'artist') {
-        selectedComponent = (<div className='output'>
+        selectedComponent = (<div className='selectedComponentOutput'>
             <div className='selectedOutput'>
                 <div className='left'></div>
                 <div className='center'>
@@ -251,7 +251,6 @@ class MainPage extends React.Component {
                     </section>
                     <section className='gap'></section>
                     <section ref={this.experienceRef} id="experienceSec" className="experienceSec">
-                        <div className="timelineLine"></div>
                         <div className='workExperienceLabel'>PROFESSIONAL EXPERIENCE</div>
                         <div className="timeline"></div>
                         <div className='workExperienceContainer'>
@@ -341,29 +340,23 @@ class MainPage extends React.Component {
                     </div>
                 <section ref={this.contactRef} id="contactSec" className="contactSec">
                     <label className='conectWithMeLabel'>CONNECT WITH ME</label>
+                    <hr className='contactDivider' />
                     <div className='contactContent'>
                         <a href='https://www.linkedin.com/in/taisia-mertz-6a3782224/' target="_blank" rel="noreferrer noopener" className='linkedinBox'>
-                            <img src={linkedinIcon} className='linkedinIconContact'></img>
-                            <div className='linkedinInfo'>
-                                <label className='linkedinLabel'>LINKEDIN</label>
-                                <label className='linkedinTag'>@taisia-mertz</label>
-                            </div>
+                            <svg fill="white" className='linkedinIconContact' viewBox="0 0 30 30" height="2.25em" width="2.25em" xmlns="http://www.w3.org/2000/svg"><path d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.99 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.53 20.48H3.56V9h3.97v11.48zM5.55 7.74a2.26 2.26 0 0 1-2.26-2.26 2.26 2.26 0 0 1 2.26-2.26c1.24 0 2.25 1.01 2.25 2.26a2.26 2.26 0 0 1-2.25 2.26zm15.25 12.74h-3.96v-5.57c0-1.33 0-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96v5.67H9.88V9h3.81v1.56h.05c.53-.99 1.82-2.05 3.75-2.05 4.01 0 4.76 2.64 4.76 6.08v5.89z"></path></svg>
+                            <label className='linkedinLabel'>LINKEDIN</label>
+                            <label className='linkedinTag'>@taisia-mertz</label>
                         </a>
                         <div className='emailBox'  onClick={handleEmailClick}>
-                            <img src={emailIcon} className='emailIconContact'></img>
-                            <div className='emailInfo'>
-                                <label className='emailLabel'>EMAIL</label>
-                                <label className='emailTag'>tmertz@usc.edu</label>
-                            </div>
+                            <svg fill="white" className='emailIconContact' viewBox="0 0 16 16" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H2c-1.1 0-1.99.9-1.99 2L0 12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 4l-6 3.5L2 6V4l6 3.5L14 4v2z"/></svg>
+                            <label className='emailLabel'>EMAIL</label>
+                            <label className='emailTag'>tmertz@usc.edu</label>
                         </div>
                         <a href='https://github.com/mertz-taisia' target="_blank" rel="noreferrer noopener" className='githubBox'>
-                            <img src={githubIcon} className='githubIconContact' alt='GitHub Icon'></img>
-                            <div className='githubInfo'>
-                                <label className='githubLabel'>GITHUB</label>
-                                <label className='githubTag'>@mertz-taisia</label>
-                            </div>
+                            <svg fill='white' className='githubIconContact' viewBox="0 0 30 30" height="2.25em" width="2.25em" xmlns="http://www.w3.org/2000/svg"><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path></svg>
+                            <label className='githubLabel'>GITHUB</label>
+                            <label className='githubTag'>@mertz-taisia</label>
                         </a>
-
                     </div>
                 </section>
             </main>
