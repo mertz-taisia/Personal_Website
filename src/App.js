@@ -3,6 +3,9 @@ import MainPage from './components/MainPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import USCMakers from './components/USCMakers';
 import Pltw from './components/Pltw';
+import Paintings from './components/Paintings';
+import Sculptures from './components/Sculptures';
+import MixedMedia from './components/MixedMedia';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/uscmakers" element={<USCMakers />} />
             <Route path="/pltw" element={<Pltw />} />
+            <Route path="/paintings" element={<Paintings />} />
+            <Route path="/sculptures" element={<Sculptures />} />
+            <Route path="/mixedMedia" element={<MixedMedia />} />
         </Routes>
       </Router>
     </div>
