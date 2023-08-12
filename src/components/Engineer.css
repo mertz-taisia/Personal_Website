@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .uscMakersSelection:hover {
@@ -44,6 +45,7 @@
     justify-content: center;
     margin-bottom: 3vh;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .pltwSelection:hover {
