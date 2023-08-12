@@ -1,5 +1,6 @@
 body {
     background: rgb(0, 6, 57);
+    font-family: 'Rubik', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -99,21 +100,22 @@ html {
 .intro {
     color: rgb(170, 179, 255);
     font-size: calc(5px + 1vw);
-    font-weight: bold;
+    letter-spacing: 0.1vw;
+    font-weight: 500;
 }
 
 .name {
     color: white;
-    font-size: 3em;
     font-size: calc(15px + 2vw);
     font-weight: bold;
+    letter-spacing: 0.25vw;
 }
 
 .careerList {
     color: white;
-    font-weight: bold;
-    font-size: 0.8em;
+    font-weight: 500;
     font-size: calc(2.5px + 0.75vw);
+    letter-spacing: 0.15vw;
     display: flex;
     flex-direction: row;
 }   
@@ -277,7 +279,7 @@ html {
     background: rgb(0, 3, 30);
     border: 0.5px solid rgb(111, 125, 255);
     height: calc(200px + 10vw);
-    min-height: 250px;
+    min-height: 275px;
     z-index: 8; 
     filter: drop-shadow(10px 10px 100px rgba(170, 178, 255, 0.2));
     display: flex;
@@ -295,17 +297,19 @@ html {
     color: aliceblue;
     font-size: calc(6px + 1.5vw);
     letter-spacing: 1vw;
-    font-weight: lighter;
+    font-weight: 100;
 }
 
 .aboutMeInfo {
     color: white;
-    font-weight: bold;
+    letter-spacing: 0.01vw;
+    font-weight: 500;
     font-size: calc(3px + 0.65vw);
 }
 
 .aboutMeContent {
     color: rgb(185, 187, 216);
+    letter-spacing: 0.02vw;
     font-weight: lighter;
     font-size: calc(4.5px + 0.65vw);
     line-height: 2;

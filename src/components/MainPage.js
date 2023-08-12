@@ -15,9 +15,8 @@ import ecoFarmsIcon from '../images/eco_farms_icon.jpg';
 import uscMakersJobIcon from '../images/usc_makers_job_icon.png';
 import bahIcon from '../images/bah_icon.png';
 import background from '../images/background.png';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import USCMakers from './USCMakers';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const email = 'tmertz@usc.edu';
 
@@ -149,6 +148,9 @@ class MainPage extends React.Component {
 
     return (
         <div className = 'mainPage'>
+            <Helmet>
+                <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+            </Helmet>
             <header className = 'mainPageHeader'>
                 <label className="mainLabel">
                         TAISIA MERTZ
