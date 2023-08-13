@@ -9,7 +9,8 @@ function SoftwareDeveloper() {
     <div className='softwareDeveloperOuput'>
       <hr className='divider' />
 
-      <div className='budgetTrackerSelection'>
+      <div className='budgetTrackerSelection'
+        onClick={() => window.open("https://github.com/mertz-taisia/Budget_Tracker", "_blank")}>
         <div className='selectionInner'>
           <img className='budgetTrackerIcon' src={budgetTrackerIcon}></img>
           <div className='projectInfoContainer'>
@@ -19,7 +20,8 @@ function SoftwareDeveloper() {
         </div>
       </div>
 
-      <div className='hysteresisCalculatorSelection'>
+      <div className='hysteresisCalculatorSelection'
+        onClick={() => window.open("https://github.com/mertz-taisia/Hysteresis-Calculator", "_blank")}>
         <div className='selectionInner'>
           <img className='hysteresisCalculatorIcon' src={hysteresisCalculatorIcon}></img>
           <div className='projectInfoContainer'>
@@ -29,7 +31,8 @@ function SoftwareDeveloper() {
         </div>      
       </div>
 
-      <div className='personalWebsiteSelection'>
+      <div className='personalWebsiteSelection'
+        onClick={() => window.open("https://github.com/mertz-taisia/Personal_Website", "_blank")}>
         <div className='selectionInner'>
           <img className='personalWebsiteIcon' src={personalWebsiteIcon}></img>
           <div className='projectInfoContainer'>

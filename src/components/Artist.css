@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .paintingSelection:hover {
@@ -41,6 +42,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .sculpturesSelection:hover {
@@ -59,6 +61,7 @@
     justify-content: center;
     margin-bottom: 3vh;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .mixedMediaSelection:hover {
