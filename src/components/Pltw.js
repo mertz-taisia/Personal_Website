@@ -24,7 +24,7 @@ function Pltw() {
         <div className='pltwPageInner'>
             <div className='jobInfo'>
                 <label className='jobPosition'>ENGINEERING PROGRAM</label>
-                <label className='jobPageDate'>September 2022 - Present</label>
+                <label className='jobPageDate'>September 2014 - May 2021</label>
             </div>
             <ul className='positionDescription'>
                 <li>Leading a team of highly skilled engineering students in the development of a cutting-edge,  

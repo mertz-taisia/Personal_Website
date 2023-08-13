@@ -26,7 +26,7 @@ function MixedMedia() {
                 <label className='jobPosition'>ART MADE USING A COMBINATION OF MEDIUMS</label>
                 <label className='jobPageDate'>Present</label>
             </div>
-            <div className='paintingContent'>Insert mixed media pieces</div>
+            <div className='mixedMediaContent'>Insert mixed media pieces</div>
         </div>
     </div>
   )

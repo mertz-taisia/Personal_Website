@@ -1,16 +1,16 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import './Sculptures.css'
+import './EcoFarms.css'
 import { Link } from 'react-router-dom';
 
-function Sculptures() {
+function EcoFarms() {
   return (
     <div className='jobPage'>
         <Helmet>
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
         </Helmet>
         <div className="titleAndIcon">
-            <label className='jobPageTitle'>SCULPTURES</label>
+            <label className='jobPageTitle'>BOOZ ALLEN HAMILTON</label>
             <Link to="/">
                 <button class="Btn">
                     <svg class="arrow" viewBox="0 0 512 512">
@@ -23,13 +23,15 @@ function Sculptures() {
         <div className="jobDivider"></div>
         <div className='pltwPageInner'>
             <div className='jobInfo'>
-                <label className='jobPosition'>SCULPTURES ACROSS VARIOUS MEDIUMS</label>
-                <label className='jobPageDate'>Present</label>
+                <label className='jobPosition'>WEB DEVELOPER</label>
+                <label className='jobPageDate'>March 2020 - April 2021</label>
             </div>
-            <div className='sculpturesContent'>Insert sculptures</div>
+            <ul className='positionDescription'>
+                <li>content</li>
+            </ul>
         </div>
     </div>
   )
 }
 
-export default Sculptures
+export default EcoFarms
