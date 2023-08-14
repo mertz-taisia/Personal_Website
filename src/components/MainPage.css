@@ -647,7 +647,6 @@ html {
     cursor: pointer;
     transition: filter 0.3s ease;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .job:hover {

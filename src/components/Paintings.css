@@ -1,0 +1,85 @@
+.paintingContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vw;
+    /* width: 90%; */
+}
+
+.paintingsLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: red; */
+}
+
+.paintingsCenterLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.paintingsCenterRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paintingsRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paintingCard {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    background: yellow;
+}
+
+.paintingCardInner {
+    background: #000639;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    text-decoration: none;
+}
+
+
+.paintingCard img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+.paintingCardTitle {
+    font-size: calc(3.5px + 0.85vw);
+    color: white;
+}
+
+.paintingCardMedium {
+    font-size: calc(1px + 0.85vw);
+    font-style: italic;
+    color: white;
+}
+
+.paintingCardDescription {
+    font-size: calc(0.5px + 0.85vw);
+    font-weight: 300;
+    color: #BABABA;
+}
