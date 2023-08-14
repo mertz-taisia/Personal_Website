@@ -14,6 +14,7 @@ import bouquet from '../images/paintings/bouquet.jpg';
 import crocodile from '../images/paintings/crocodile.jpg';
 import telephoneWires from '../images/paintings/telephone_wires.jpg';
 import flowerTri from '../images/paintings/flower_tri.jpg';
+import venice from '../images/paintings/venice.jpg';
 
 
 function Paintings() {
@@ -98,6 +99,20 @@ function Paintings() {
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
                             <div className='imageContainer'>
+                                <img src = {lightHouse} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Lighthouse</label>
+                            <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
+                        </div>
+                    </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
                                 <img src = {bouquet} alt = "error"></img>
                             </div>
                             <label className='paintingCardTitle'>Un Petit Bouquet</label>
@@ -128,9 +143,23 @@ function Paintings() {
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
                             <div className='imageContainer'>
-                                <img src = {lightHouse} alt = "error"></img>
+                                <img src = {venice} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Lighthouse</label>
+                            <label className='paintingCardTitle'>Venice</label>
+                            <label className='paintingCardMedium'>Oil on Canvas</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
+                        </div>
+                    </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {telephoneWires} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Telephone Wires</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
@@ -145,20 +174,6 @@ function Paintings() {
                                 <img src = {crocodile} alt = "error"></img>
                             </div>
                             <label className='paintingCardTitle'>Lighthouse</label>
-                            <label className='paintingCardMedium'>Acrylic on Paper</label>
-                            <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                            </label>
-                        </div>
-                    </div>
-                    <div className='paintingCard'>
-                        <div className='paintingCardInner'>
-                            <div className='imageContainer'>
-                                <img src = {telephoneWires} alt = "error"></img>
-                            </div>
-                            <label className='paintingCardTitle'>Telephone Wires</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
