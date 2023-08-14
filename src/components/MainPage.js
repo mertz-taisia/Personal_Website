@@ -30,10 +30,14 @@ class MainPage extends React.Component {
     constructor(props) {
         super(props);
     
+        // Initialize the portfolioSelected from localStorage or default to 'softwareDeveloper'
+        const savedPortfolio = localStorage.getItem('portfolioSelected') || 'softwareDeveloper';
+    
         this.state = {
-            portfolioSelected: 'softwareDeveloper',
+            portfolioSelected: savedPortfolio,
+            iconClicked: false,
             clicked: false
-          };
+        };
   
         this.handleSelection = this.handleSelection.bind(this);
     
@@ -43,12 +47,11 @@ class MainPage extends React.Component {
         this.porfolioRef = React.createRef();
         this.selectedRef = React.createRef();
         this.contactRef = React.createRef();
-      }
+    }
       
-      scrollTo(section) {
+    scrollTo(section) {
         if (section.current) {
             let headerHeight = 72; 
-    
             if (section === this.selectedRef) {
                 headerHeight = 100;
             } 
@@ -61,38 +64,42 @@ class MainPage extends React.Component {
             else if (section === this.porfolioRef) {
                 headerHeight = 120;
             }
-    
             window.scrollTo({
                 top: section.current.offsetTop - headerHeight,
                 behavior: "smooth"
             });
         }
     }
+
+    componentWillUnmount() {
+        localStorage.setItem('mainPageScrollPosition', window.scrollY.toString());
+        localStorage.setItem('portfolioSelected', this.state.portfolioSelected);
+    }
+
+    componentDidMount() {
+        const savedPosition = localStorage.getItem('mainPageScrollPosition');
+        if (savedPosition !== null) {
+            window.scrollTo(0, parseInt(savedPosition, 10));
+        }
+    }
+
+    handleSelection = (section) => {
+        this.setState({ portfolioSelected: section });
+    };
     
-      
-      
-  handleSelection = (section) => {
-    this.setState({ portfolioSelected: section });
-  };
+    handleDownloadClick = () => {
+        this.setState({ showIcon: !this.state.showIcon });
+        this.setState({ clicked: true });
+        window.open(resume, '_blank', 'noopener,noreferrer');
 
-  state = {
-    iconClicked: false
-  };
-  
-
-  handleDownloadClick = () => {
-    this.setState({ showIcon: !this.state.showIcon });
-    this.setState({ clicked: true });
-    window.open(resume, '_blank', 'noopener,noreferrer');
-
-    const link = document.createElement('a');
-    link.href = resume;
-    link.download = 'Taisia Mertz Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+        const link = document.createElement('a');
+        link.href = resume;
+        link.download = 'Taisia Mertz Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    
   render() {
     const { portfolioSelected } = this.state;
 

@@ -20,7 +20,7 @@ function Artist() {
         </div>
       </Link>
 
-      <Link to="/sculptures" className='sculpturesSelection'> 
+      {/* <Link to="/sculptures" className='sculpturesSelection'> 
         <div className='selectionInner'>
           <img className='sculpturesIcon' src={sculpturesIcon}></img>
           <div className='projectInfoContainer'>
@@ -28,7 +28,7 @@ function Artist() {
             <p className='selectionDecriptionContainer'>Something about sculptures</p>
           </div>  
         </div>
-      </Link>
+      </Link> */}
 
       <Link to="/mixedMedia" className='mixedMediaSelection'>
         <div className='selectionInner'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './Paintings.css'
 import { Link } from 'react-router-dom';
@@ -19,6 +19,11 @@ import oranges from '../images/paintings/oranges.jpg';
 
 
 function Paintings() {
+    
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className='jobPage'>
         <Helmet>

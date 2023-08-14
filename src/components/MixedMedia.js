@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './Paintings.css'
 import { Link } from 'react-router-dom';
@@ -12,6 +12,11 @@ import keyHooks from '../images/mixedMedia/key_hooks.jpg';
 
 
 function MixedMedia() {
+    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className='jobPage'>
         <Helmet>
