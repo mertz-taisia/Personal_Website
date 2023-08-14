@@ -15,6 +15,7 @@ import crocodile from '../images/paintings/crocodile.jpg';
 import telephoneWires from '../images/paintings/telephone_wires.jpg';
 import flowerTri from '../images/paintings/flower_tri.jpg';
 import venice from '../images/paintings/venice.jpg';
+import oranges from '../images/paintings/oranges.jpg';
 
 
 function Paintings() {
@@ -41,10 +42,10 @@ function Paintings() {
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
                             <div className='imageContainer'>
-                                <img src = {parisMagnolias} alt = "error"></img>
+                                <img src = {oranges} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Layover in Paris</label>
-                            <label className='paintingCardMedium'>Acrylic on Wood</label>
+                            <label className='paintingCardTitle'>Telephone Wires</label>
+                            <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
                                 This is a descriptions of my painting
@@ -157,10 +158,10 @@ function Paintings() {
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
                             <div className='imageContainer'>
-                                <img src = {telephoneWires} alt = "error"></img>
+                                <img src = {parisMagnolias} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Telephone Wires</label>
-                            <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardTitle'>Layover in Paris</label>
+                            <label className='paintingCardMedium'>Acrylic on Wood</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
                                 This is a descriptions of my painting
@@ -171,9 +172,9 @@ function Paintings() {
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
                             <div className='imageContainer'>
-                                <img src = {crocodile} alt = "error"></img>
+                                <img src = {telephoneWires} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Lighthouse</label>
+                            <label className='paintingCardTitle'>Telephone Wires</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
@@ -219,6 +220,20 @@ function Paintings() {
                             </div>
                             <label className='paintingCardTitle'>Flower Tri</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
+                        </div>
+                    </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {crocodile} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Crocodile</label>
+                            <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
                                 This is a descriptions of my painting
                                 This is a descriptions of my painting
