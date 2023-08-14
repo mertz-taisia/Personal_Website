@@ -2,35 +2,9 @@
     display: flex;
     flex-direction: row;
     margin-top: 2vw;
-    /* width: 90%; */
 }
 
-.paintingsLeft {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    /* background: red; */
-}
-
-.paintingsCenterLeft {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; 
-}
-
-.paintingsCenterRight {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.paintingsRight {
+.paintingsLeft, .paintingsCenterLeft, .paintingsCenterRight, .paintingsRight {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -48,6 +22,7 @@
 }
 
 .paintingCardInner {
+    position: relative; /* This is crucial */
     background: #000639;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1vw;
@@ -60,11 +35,21 @@
     text-decoration: none;
 }
 
-
-.paintingCard img {
+.paintingCard .imageContainer {
+    background: rgb(214, 214, 221);
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1vw;
+}
+
+.paintingCard img {
+    width: 97.5%;
+    height: auto;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
 }
 
 .paintingCardTitle {
@@ -79,7 +64,34 @@
 }
 
 .paintingCardDescription {
-    font-size: calc(0.5px + 0.85vw);
+    padding: 1vw;
+    font-style: italic;
+    font-size: calc(0.5px + 0.9vw);
+    letter-spacing: 0.155em; 
+    line-height: 3;
     font-weight: 300;
     color: #BABABA;
+    margin-bottom: 0.5vw;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer, .paintingCardTitle, .paintingCardMedium {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.paintingCardInner:hover .imageContainer,
+.paintingCardInner:hover .paintingCardTitle,
+.paintingCardInner:hover .paintingCardMedium {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.paintingCardInner:hover .paintingCardDescription {
+    opacity: 1;
+    visibility: visible;
 }

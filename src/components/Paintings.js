@@ -39,92 +39,176 @@ function Paintings() {
                 <div className='paintingsLeft'>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {parisMagnolias} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {parisMagnolias} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Layover in Paris</label>
                             <label className='paintingCardMedium'>Acrylic on Wood</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {wave} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {wave} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Sea Foam</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div className='paintingsCenterLeft'>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {santorini} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {santorini} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Caldera's Embrace</label>
                             <label className='paintingCardMedium'>Oil of Canvas</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {eveningSky} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {eveningSky} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Evening Sky</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {bouquet} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {bouquet} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Un Petit Bouquet</label>
                             <label className='paintingCardMedium'>Acrylic on Canvas</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div className='paintingsCenterRight'>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {londonRain} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {londonRain} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>London Rain</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {lightHouse} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {lightHouse} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Lighthouse</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {crocodile} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {crocodile} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Lighthouse</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {telephoneWires} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {telephoneWires} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Telephone Wires</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div className='paintingsRight'>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {cityStorm} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {cityStorm} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Stormy Nights</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {castle} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {castle} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>French Castle</label>
                             <label className='paintingCardMedium'>Oil on Canvas</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                     <div className='paintingCard'>
                         <div className='paintingCardInner'>
-                            <img src = {flowerTri} alt = "error"></img>
+                            <div className='imageContainer'>
+                                <img src = {flowerTri} alt = "error"></img>
+                            </div>
                             <label className='paintingCardTitle'>Flower Tri</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardDescription'>
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                                This is a descriptions of my painting
+                            </label>
                         </div>
                     </div>
                 </div>
