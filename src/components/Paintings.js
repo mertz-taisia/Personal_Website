@@ -44,12 +44,11 @@ function Paintings() {
                             <div className='imageContainer'>
                                 <img src = {oranges} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Telephone Wires</label>
-                            <label className='paintingCardMedium'>Acrylic on Paper</label>
+                            <label className='paintingCardTitle'>Golden Harvest</label>
+                            <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Small oil piece painted one night after missing a flight 
+                                depicting a vibrant bowl of fruit.
                             </label>
                         </div>
                     </div>
@@ -61,9 +60,11 @@ function Paintings() {
                             <label className='paintingCardTitle'>Sea Foam</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Wave created using non-traditional methods:  
+                                diluted acrylic paint is molded by the pull of 
+                                gravity and the force of air blown through a straw, 
+                                with added nuances achieved by spraying paint creating 
+                                additional texture.
                             </label>
                         </div>
                     </div>
@@ -77,9 +78,8 @@ function Paintings() {
                             <label className='paintingCardTitle'>Caldera's Embrace</label>
                             <label className='paintingCardMedium'>Oil of Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Three-month-long painting capturing the essence 
+                                of the picturesque island of Santorini, Greece.
                             </label>
                         </div>
                     </div>
@@ -91,9 +91,9 @@ function Paintings() {
                             <label className='paintingCardTitle'>Evening Sky</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Acrylic piece crafted with a limited 
+                                palette of four core colors, capturing the 
+                                essence of the evening sky.
                             </label>
                         </div>
                     </div>
@@ -105,9 +105,8 @@ function Paintings() {
                             <label className='paintingCardTitle'>Lighthouse</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Concise artwork showcasing a lighthouse 
+                                standing sentinel on a beach shore.
                             </label>
                         </div>
                     </div>
@@ -119,9 +118,8 @@ function Paintings() {
                             <label className='paintingCardTitle'>Un Petit Bouquet</label>
                             <label className='paintingCardMedium'>Acrylic on Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                A palm-sized acrylic painting capturing 
+                                pansy bouquet in full bloom.
                             </label>
                         </div>
                     </div>
@@ -135,9 +133,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>London Rain</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Acrylic piece depicting the streets of London, bathed in rain.
                             </label>
                         </div>
                     </div>
@@ -149,9 +145,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>Venice</label>
                             <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Large oil painting capturing the mesmerizing canals of Venice, Italy.
                             </label>
                         </div>
                     </div>
@@ -163,9 +157,10 @@ function Paintings() {
                             <label className='paintingCardTitle'>Layover in Paris</label>
                             <label className='paintingCardMedium'>Acrylic on Wood</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Artwork created in homage to my mother, who, 
+                                during her immigration to the US, experienced 
+                                a brief 5-hour layover in Paris and discovered 
+                                the city awash in bloom.
                             </label>
                         </div>
                     </div>
@@ -177,9 +172,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>Telephone Wires</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Acrylic rendering of telephone wires silhouetted against a sunset sky.
                             </label>
                         </div>
                     </div>
@@ -193,9 +186,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>Stormy Nights</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Acrylic depiction of a lightning storm illuminating a city at night.
                             </label>
                         </div>
                     </div>
@@ -204,12 +195,10 @@ function Paintings() {
                             <div className='imageContainer'>
                                 <img src = {castle} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>French Castle</label>
+                            <label className='paintingCardTitle'>Mont Saint-Michel</label>
                             <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Oil rendering of the Most Saint-Michel made after a visit to Normandy, France.
                             </label>
                         </div>
                     </div>
@@ -221,9 +210,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>Flower Tri</label>
                             <label className='paintingCardMedium'>Acrylic on Paper</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Triptych acrylic composition showcasing three distinct types of flowers.
                             </label>
                         </div>
                     </div>
@@ -232,12 +219,13 @@ function Paintings() {
                             <div className='imageContainer'>
                                 <img src = {crocodile} alt = "error"></img>
                             </div>
-                            <label className='paintingCardTitle'>Crocodile</label>
+                            <label className='paintingCardTitle'>The Crocodile and the Plover Bird</label>
                             <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
-                                This is a descriptions of my painting
+                                Oil painting illustrating the symbiotic relationship 
+                                between the plover bird and the crocodile, a 
+                                testament to nature's delicate balance and 
+                                unexpected alliances.
                             </label>
                         </div>
                     </div>
