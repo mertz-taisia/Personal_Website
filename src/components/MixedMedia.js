@@ -1,7 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import './MixedMedia.css'
+import './Paintings.css'
 import { Link } from 'react-router-dom';
+import butterflies from '../images/mixedMedia/butterflies.jpg';
+import beehive from '../images/mixedMedia/beehive.jpg';
+import moth from '../images/mixedMedia/moth.jpg';
+import seahorse from '../images/mixedMedia/seahorse.jpg';
+import plants from '../images/mixedMedia/plants.jpg';
+import bugs from '../images/mixedMedia/bugs.jpg';
+import keyHooks from '../images/mixedMedia/key_hooks.jpg';
+
 
 function MixedMedia() {
   return (
@@ -10,7 +18,7 @@ function MixedMedia() {
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
         </Helmet>
         <div className="titleAndIcon">
-            <label className='jobPageTitle'>PAINTINGS</label>
+            <label className='jobPageTitle'>MIXED MEDIA</label>
             <Link to="/">
                 <button class="Btn">
                     <svg class="arrow" viewBox="0 0 512 512">
@@ -22,11 +30,90 @@ function MixedMedia() {
             </div>
         <div className="jobDivider"></div>
         <div className='pltwPageInner'>
-            <div className='jobInfo'>
-                <label className='jobPosition'>ART MADE USING A COMBINATION OF MEDIUMS</label>
-                <label className='jobPageDate'>Present</label>
+            <div className='paintingContent'>
+                <div className='paintingsLeft'>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {butterflies} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Flight</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                A sculpture showcasing a swarm of handmade paper 
+                                butterflies gracefully taking from a branch.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div className='paintingsCenterLeft'>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {beehive} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Beehive</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                A beehive design blending flat and three-dimensional elements.
+                            </label>
+                        </div>
+                    </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {plants} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Mezen Design</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                Replica of the traditional Mezen style, employing classic 
+                                black, red, and yellow hues, enriched with gold-infused paint.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div className='paintingsCenterRight'>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {moth} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Antheraea polyphemus</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                Handcrafted imitation of the Antheraea polyphemus moth.
+                            </label>
+                        </div>
+                    </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {bugs} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Bug's Life</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                A bug's-eye view of the world created blending flat and three-dimensional elements.                                
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div className='paintingsRight'>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {seahorse} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Seahorse</label>
+                            <label className='paintingCardMedium'>Paper Mache</label>
+                            <label className='paintingCardDescription'>
+                                Seahorse replica created using paper mache.
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='mixedMediaContent'>Insert mixed media pieces</div>
         </div>
     </div>
   )

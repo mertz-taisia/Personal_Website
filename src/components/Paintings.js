@@ -76,7 +76,7 @@ function Paintings() {
                                 <img src = {santorini} alt = "error"></img>
                             </div>
                             <label className='paintingCardTitle'>Caldera's Embrace</label>
-                            <label className='paintingCardMedium'>Oil of Canvas</label>
+                            <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
                                 Three-month-long painting capturing the essence 
                                 of the picturesque island of Santorini, Greece.
@@ -198,7 +198,7 @@ function Paintings() {
                             <label className='paintingCardTitle'>Mont Saint-Michel</label>
                             <label className='paintingCardMedium'>Oil on Canvas</label>
                             <label className='paintingCardDescription'>
-                                Oil rendering of the Most Saint-Michel made after a visit to Normandy, France.
+                                Oil rendering of the Mont Saint-Michel made after a visit to Normandy, France.
                             </label>
                         </div>
                     </div>
