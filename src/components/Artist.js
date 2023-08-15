@@ -15,7 +15,7 @@ function Artist() {
           <img className='paintingIcon' src={paintingIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>PAINTING</label>
-            <p className='selectionDecriptionContainer'>Something about acrylic and oil painting</p>
+            <p className='selectionDecriptionContainer'>Collection of paintings featuring both acrylic and oil works.</p>
           </div>   
         </div>
       </Link>
@@ -35,7 +35,7 @@ function Artist() {
           <img className='mixedMediaIcon' src={mixedMediaIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>MIXED MEDIA</label>
-            <p className='selectionDecriptionContainer'>This is a placeholder project</p>
+            <p className='selectionDecriptionContainer'>Collection of pieces created using a combination of various mediums.</p>
           </div>  
         </div>
       </Link>

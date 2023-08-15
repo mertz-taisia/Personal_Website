@@ -116,6 +116,18 @@ function MixedMedia() {
                             </label>
                         </div>
                     </div>
+                    <div className='paintingCard'>
+                        <div className='paintingCardInner'>
+                            <div className='imageContainer'>
+                                <img src = {keyHooks} alt = "error"></img>
+                            </div>
+                            <label className='paintingCardTitle'>Key Hooks</label>
+                            <label className='paintingCardMedium'>Mixed Media</label>
+                            <label className='paintingCardDescription'>
+                                Lemon key hooks 
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

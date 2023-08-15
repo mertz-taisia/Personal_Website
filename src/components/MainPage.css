@@ -737,7 +737,7 @@ html {
     margin-left: 3vw;
     font-size: 1.5vw;
     transform: scaleX(3);
-    font-weight: lighter;
+    font-weight: 100;
     cursor: pointer;
 }
 

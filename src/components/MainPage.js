@@ -294,10 +294,10 @@ class MainPage extends React.Component {
                                 <div className="softwareDeveloperContainerInner">
                                     <label className="softwareDeveloperLabel">SOFTWARE DEVELOPER</label>
                                     <p className="softwareDeveloperDescription">
-                                        This is a short description of what 
-                                        I’ve done that is relevant to software 
-                                        development. Clicking this links to 
-                                        my personal projects.
+                                        Click to browse my software engineering 
+                                        and web development projects, 
+                                        including personal initiatives and 
+                                        commissioned works.
                                     </p>
                                     <label className="softwareDeveloperLearnMore">LEARN MORE</label>
                                 </div>
@@ -310,10 +310,10 @@ class MainPage extends React.Component {
                                 <div className="engineerContainerInner">
                                         <label className="engineerLabel">ENGINEER</label>
                                         <p className="engineerDescription">
-                                            This is a short description of what 
-                                            I’ve done that is relevant to software 
-                                            development. Clicking this links to 
-                                            my personal projects.
+                                            Click to explore my experience using 
+                                            various engineering principles to design 
+                                            and implement practical solutions for 
+                                            technical challenges.
                                         </p>
                                         <label className="engineerLearnMore">LEARN MORE</label>
                                     </div>
@@ -326,10 +326,10 @@ class MainPage extends React.Component {
                                     <div className="artistContainerInner">
                                         <label className="artistLabel">ARTIST</label>
                                         <p className="artistDescription">
-                                            This is a short description of what 
-                                            I’ve done that is relevant to software 
-                                            development. Clicking this links to 
-                                            my personal projects.
+                                            Click to explore my art portfolio, 
+                                            showcasing a collection of artworks 
+                                            capturing narrative and emotion 
+                                            through diverse mediums. 
                                         </p>
                                         <label className="artistLearnMore">LEARN MORE</label>
                                     </div>

@@ -10,7 +10,7 @@ function SoftwareDeveloper() {
       <hr className='divider' />
 
       <div className='budgetTrackerSelection'
-        onClick={() => window.open("https://github.com/mertz-taisia/Budget_Tracker", "_blank")}>
+        onClick={() => window.open("https://budget-tracker-taisia-mertz.vercel.app/dashboard", "_blank")}>
         <div className='selectionInner'>
           <img className='budgetTrackerIcon' src={budgetTrackerIcon}></img>
           <div className='projectInfoContainer'>
@@ -37,7 +37,7 @@ function SoftwareDeveloper() {
           <img className='personalWebsiteIcon' src={personalWebsiteIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>Personal Website</label>
-            <p className='selectionDecriptionContainer'>Personal Website developed using ReactJS. It serves as a platform to showcase my various original design concepts and acts as a creative representation of my CV, allowing you to explore and learn more about my professional experience.</p>
+            <p className='selectionDecriptionContainer'>Personal Website developed using ReactJS. It serves as a platform to showcase various original design concepts and acts as a creative representation of my CV, allowing you to explore and learn more about my professional experience.</p>
           </div>  
         </div>
       </div>

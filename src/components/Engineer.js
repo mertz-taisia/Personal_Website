@@ -22,7 +22,7 @@ function Engineer() {
           <img className='pltwIcon' src={pltwIcon}></img>
           <div className='projectInfoContainer'>
             <label className='selectionTitleContainer'>Project Lead The Way (PLTW)</label>
-            <p className='selectionDecriptionContainer'>Student run engineering organization aimed facilitate the exploration of concepts in electronics design and stimulate interest in fields of electronics such as the Internet of Things, Embedded Systems, and Robotics.</p>
+            <p className='selectionDecriptionContainer'>A seven-year integrated engineering program offering comprehensive education and practical professional exposure across diverse engineering disciplines.</p>
           </div>  
         </div>      
       </Link>
