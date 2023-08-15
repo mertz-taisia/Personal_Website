@@ -1,5 +1,6 @@
 import './App.css';
 import MainPage from './components/MainPage';
+import { Helmet } from 'react-helmet';  
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Cua from './components/Cua';
