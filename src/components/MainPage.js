@@ -3,12 +3,6 @@ import './MainPage.css';
 import SoftwareDeveloper from './SoftwareDeveloper'; 
 import Engineer from './Engineer';
 import Artist from './Artist';
-import techBackground from '../images/tech_background.PNG';
-import headshot from '../images/professional_headshot_cutout.PNG';
-import emailIcon from '../images/email_icon.png';
-import githubIcon from '../images/github_icon.png';
-import linkedinIcon from '../images/linkedin_icon.png';
-import resumeIcon from '../images/resume_icon.jpg';
 import resume from '../Taisia Mertz Resume.pdf';
 import cuaIcon from '../images/cua_icon.png';
 import ecoFarmsIcon from '../images/eco_farms_icon.jpg';
@@ -30,7 +24,6 @@ class MainPage extends React.Component {
     constructor(props) {
         super(props);
     
-        // Initialize the portfolioSelected from localStorage or default to 'softwareDeveloper'
         const savedPortfolio = localStorage.getItem('portfolioSelected') || 'softwareDeveloper';
     
         this.state = {
@@ -47,6 +40,12 @@ class MainPage extends React.Component {
         this.porfolioRef = React.createRef();
         this.selectedRef = React.createRef();
         this.contactRef = React.createRef();
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.portfolioSelected !== this.state.portfolioSelected) {
+            localStorage.setItem('portfolioSelected', this.state.portfolioSelected);
+        }
     }
       
     scrollTo(section) {
@@ -69,19 +68,7 @@ class MainPage extends React.Component {
                 behavior: "smooth"
             });
         }
-    }
-
-    componentWillUnmount() {
-        localStorage.setItem('mainPageScrollPosition', window.scrollY.toString());
-        localStorage.setItem('portfolioSelected', this.state.portfolioSelected);
-    }
-
-    componentDidMount() {
-        const savedPosition = localStorage.getItem('mainPageScrollPosition');
-        if (savedPosition !== null) {
-            window.scrollTo(0, parseInt(savedPosition, 10));
-        }
-    }
+    }    
 
     handleSelection = (section) => {
         this.setState({ portfolioSelected: section });

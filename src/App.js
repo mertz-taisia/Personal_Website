@@ -2,7 +2,6 @@ import './App.css';
 import MainPage from './components/MainPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-
 import Cua from './components/Cua';
 import EcoFarms from './components/EcoFarms';
 import Bah from './components/Bah';
@@ -11,6 +10,7 @@ import Pltw from './components/Pltw';
 import Paintings from './components/Paintings';
 import Sculptures from './components/Sculptures';
 import MixedMedia from './components/MixedMedia';
+
 
 function App() {
   return (

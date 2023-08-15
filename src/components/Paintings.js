@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './Paintings.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import parisMagnolias from '../images/paintings/paris_magnolias.jpg';
 import santorini from '../images/paintings/santorini.jpg';
 import londonRain from '../images/paintings/london_rain.jpg';
@@ -16,9 +16,11 @@ import telephoneWires from '../images/paintings/telephone_wires.jpg';
 import flowerTri from '../images/paintings/flower_tri.jpg';
 import venice from '../images/paintings/venice.jpg';
 import oranges from '../images/paintings/oranges.jpg';
+import { BrowserRouter as Router, Route, Link,  useNavigate } from 'react-router-dom';
 
 
 function Paintings() {
+    const navigate = useNavigate();
     
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -31,14 +33,12 @@ function Paintings() {
         </Helmet>
         <div className="titleAndIcon">
             <label className='jobPageTitle'>PAINTINGS</label>
-            <Link to="/">
-                <button class="Btn">
+                <button class="Btn" onClick={() => navigate(-1)}>
                     <svg class="arrow" viewBox="0 0 512 512">
                         <path color="black" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" transform="rotate(-90 256 256)"></path>
                     </svg>
                         <p class="text">Return Home</p>
-                    </button>
-                </Link>
+                </button>
             </div>
         <div className="jobDivider"></div>
         <div className='pltwPageInner'>
